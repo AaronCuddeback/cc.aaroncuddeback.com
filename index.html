@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CC Authentication</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <section>
+  
+            <div>
+                <img src="img/badge.png">
+                <h1>Cudde Credit Card Checker</h1>
+            </div>
+          <div>
+            <span class="field">
+              <label for="ccnum">Card Number</label>
+              <input placeholder="---- ---- ---- ----" type="tel" size="19" name="ccnum" value="" id="ccnum">
+            </span>
+            <div><small>type: <strong id="ccnum-type">invalid</strong></small></div>
+          </div>
+  
+          <div>
+            <span class="field">
+              <label for="expiry">Expiration</label>
+              <input placeholder="-- / --" size="7" type="tel" name="expiry" value="" id="expiry">
+            </span>
+  
+            <span class="cvc field">
+              <label for="cvc">CVC</label>
+              <input placeholder="---"  size="4" type="tel" name="cvc" value="" id="cvc">
+            </span>
+          </div>
+  
+          <div> 
+            <button id="submit">Validate</button>
+            <div id="result" class="emoji"></div>
+          </div>
+        </section> 
+  
+      </div>
+      <script src="script.js"></script>
+</body>
+</html>
